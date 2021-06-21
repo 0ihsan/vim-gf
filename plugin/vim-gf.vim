@@ -1,7 +1,7 @@
 nn <silent> gf :call Gf()<cr>
 " https://github.com/ihsanturk/dotfiles
 
-function Gf()
+function! Gf()
 	let currentword = expand('<cWORD>')
 	if IsURL(currentword)
 		if !executable('w3m')
